@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    background-color: white;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+  
+*:before, *:after {
+    box-sizing: inherit;
+}
+
+ /* Style the navigation bar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    overflow: auto;
+}
+  
+  /* Navbar links */
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+  /* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: #000;
+}
+  
+  /* Current/active navbar link */
+.active {
+    background-color: rgb(157, 211, 230);
+}
+  
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+
+    .navbar p {
+        display: none;
+    }
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+  
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+  
+.container {
+    padding: 0 16px;
+}
+  
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+.title {
+    color: grey;
+}
+  
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+  
+.button:hover {
+    background-color: #555;
+}
+  
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+}
+
